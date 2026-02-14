@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&display=swap');
 
 :root {
-  --bg: #760406;
+  --bg: #8a0507;
   --border: rgba(30, 30, 30, 0.1);
   --text: #151515;
   --muted: #393838;
@@ -60,7 +60,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px 1px 1px 1px;
+  padding: 16px 1px 10px 1px;
 }
 
 .title {
@@ -87,6 +87,8 @@ body {
 .countdown {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  width: 280px;
+  margin: auto;
   gap: 0px;
   padding: 10px 50px;
   text-align: center;
@@ -290,10 +292,10 @@ body {
 }
 
 @media (max-width: 420px) {
-  .window {
+  /* .window {
     width: 96vw;
     height: 200px;
-  }
+  } */
 
   .countdown {
     padding: 10px 10px;
