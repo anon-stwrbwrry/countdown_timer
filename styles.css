@@ -291,12 +291,7 @@ body {
   100% { transform: translate(0); }
 }
 
-@media (max-width: 420px) {
-  /* .window {
-    width: 96vw;
-    height: 200px;
-  } */
-
+@media (min-width: 280px) {
   .countdown {
     padding: 10px 10px;
   }
