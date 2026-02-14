@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>daniel ♥ amy countdown</title>
+    <meta name="theme-color" content="#ffc5c5" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="window" class="window">
+      <div class="topbar" id="drag-area">
+        <div class="title">daniel ♥ amy in...</div>
+        <button id="settings-btn" class="icon-btn" aria-label="Settings">⚙</button>
+      </div>
+      <div class="countdown" id="countdown">
+        <div class="unit">
+          <div class="digits" id="days">
+            <div class="digit">-</div>
+            <div class="digit">-</div>
+          </div>
+          <div class="label">days</div>
+        </div>
+        <div class="unit">
+          <div class="digits" id="hours">
+            <div class="digit">-</div>
+            <div class="digit">-</div>
+          </div>
+          <div class="label">hours</div>
+        </div>
+        <div class="unit">
+          <div class="digits" id="minutes">
+            <div class="digit">-</div>
+            <div class="digit">-</div>
+          </div>
+          <div class="label">minutes</div>
+        </div>
+      </div>
+      <div id="settings" class="settings hidden">
+        <div class="settings-row">
+          <label for="target">time of next fuck</label>
+          <input id="target" type="text" placeholder="DD/MM/YY HH:MMam" />
+        </div>
+        <div class="settings-row">
+          <button id="save-btn" class="primary">Save</button>
+          <button id="close-btn" class="ghost">Close</button>
+        </div>
+      </div>
+      <div id="hearts" class="hearts" aria-hidden="true"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
