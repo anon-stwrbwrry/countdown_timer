@@ -39,8 +39,8 @@ body {
   content: "";
   position: absolute;
   inset: 10px;
-  background: radial-gradient(circle at 20% 20%, rgba(250, 79, 79, 0.697), transparent 55%),
-    radial-gradient(circle at 80% 80%, rgba(255, 85, 85, 0.685), transparent 55%),
+  background: radial-gradient(circle at 20% 20%, rgba(245, 65, 75, 0.7), transparent 55%),
+    radial-gradient(circle at 80% 80%, rgba(245, 65, 75, 0.7), transparent 55%),
     var(--bg);
   border-radius: 18px;
   border: 1px solid var(--border);
@@ -60,7 +60,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px 1px 10px 1px;
+  padding: 16px 1px 1px 1px;
 }
 
 .title {
