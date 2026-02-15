@@ -86,8 +86,8 @@ body {
 
 .countdown {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 280px;
+  grid-template-columns: repeat(4, 1fr);
+  width: 320px;
   margin: auto;
   gap: 0px;
   padding: 10px 50px;
