@@ -78,10 +78,11 @@ function setDigits(container, value) {
   digits[1].textContent = text[1];
 }
 
-function setDisplay({ days, hours, minutes }) {
+function setDisplay({ days, hours, minutes, seconds }) {
   setDigits(els.days, days);
   setDigits(els.hours, hours);
   setDigits(els.minutes, minutes);
+  setDigits(els.seconds, seconds);
 }
 
 function loadTarget() {
@@ -139,12 +140,12 @@ function stopCelebration() {
 
 function tick() {
   if (!targetDate) {
-    setDisplay({ days: '--', hours: '--', minutes: '--' });
+    setDisplay({ days: '--', hours: '--', minutes: '--', seconds: '--' });
     return;
   }
   const diff = targetDate.getTime() - Date.now();
   if (diff <= 0) {
-    setDisplay({ days: 0, hours: 0, minutes: 0 });
+    setDisplay({ days: 0, hours: 0, minutes: 0, seconds: 0 });
     startCelebration();
     return;
   }
