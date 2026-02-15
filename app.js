@@ -6,6 +6,7 @@ const els = {
   days: document.getElementById('days'),
   hours: document.getElementById('hours'),
   minutes: document.getElementById('minutes'),
+  seconds: document.getElementById('seconds'),
   settings: document.getElementById('settings'),
   settingsBtn: document.getElementById('settings-btn'),
   closeBtn: document.getElementById('close-btn'),
@@ -62,11 +63,12 @@ function parseAEST(input) {
 }
 
 function formatParts(ms) {
-  const totalMinutes = Math.max(0, Math.floor(ms / 60000));
-  const days = Math.floor(totalMinutes / 1440);
-  const hours = Math.floor((totalMinutes % 1440) / 60);
-  const minutes = totalMinutes % 60;
-  return { days, hours, minutes };
+  const totalSeconds = Math.max(0, Math.floor(ms / 1000));
+  const days = Math.floor(totalSeconds / 86400);
+  const hours = Math.floor((totalSeconds % 86400) / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const seconds = totalSeconds % 60;
+  return { days, hours, minutes, seconds };
 }
 
 function setDigits(container, value) {
